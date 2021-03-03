@@ -1,6 +1,11 @@
 # MPD Web GUI
 A flask server serving as a GUI for an MPD server
 
+## Changes
+Updated to python3.7
+updated to latest flask-socketio
+get standard webpage javascripts from cdn
+
 ## Requierements
 Here is an installation tutorial for OSX.
 
