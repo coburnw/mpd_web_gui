@@ -21,14 +21,19 @@ def get_or_append_album(albums, album):
     albums.append(album)
     return album
 
-
+def parse_artists_from_mpd(data):
+    artists = []
+    for artist_data in data:
+        artists.append(artist_data['artist'])
+    return artists
+    
 def parse_albums_from_mpd(data):
     albums = []
     albums_json = []
 
     for song_data in data:
         album = Album()
-        album.year = song_data['date']
+        album.year = song_data.get('date', 'not found')
         album.title = song_data['album']
         album = get_or_append_album(albums, album)
         album.length += float(song_data['duration'])

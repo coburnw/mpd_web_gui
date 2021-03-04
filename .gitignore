@@ -1,3 +1,14 @@
+# emacs
+*~
+*#
+
+# python
+*.pyc
+
+# systemd control
+jughead.service
+manager.sh
+
 .DS_store
 env
 __pycache__/
