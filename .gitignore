@@ -1,3 +1,6 @@
+# python/pip environment
+venv
+
 # emacs
 *~
 *#

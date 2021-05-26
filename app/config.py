@@ -1,5 +1,5 @@
 class Config(object):
-    SERVER_DEBUG_MODE = True
+    SERVER_DEBUG_MODE = False
     SERVER_HOST = '0.0.0.0'
     SERVER_PORT = 5000
 
